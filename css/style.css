@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: url(../img/11.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 40px;
+}
+.container{
+    background-color: rgb(0,0,0,0.5);
+            width: 850px;
+            border-radius: 15px;
+            padding: 20px 30px;
+            margin: auto
+}
+.container .heading{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+.container .heading::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #71b7e6, #9b5b);
+}
+.container form .card-details{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .card-details .card-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+.card-details .card-box .details{
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.card-details .card-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.card-details .card-box input:focus,
+.card-details .card-box input:valid{
+    border-color: #9b59b6;
+}
+.container form .button{
+    text-align: center;
+}
+.container form .button input{
+    padding: 10px 0;
+    margin-top: 10px;
+    height: 100%;
+    width: 50%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#05073a,#6a06dcca);
+}
+form .button input:hover{
+    background: linear-gradient(-135deg,#05073a,#dc0606ca);
+}
+
+.card-details .card-box .option{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.card-details .card-box .checkbox{
+    height: 15px;
+    width: 10%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 1px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.container .namee{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+
+@media (max-width:584px){
+    .container{
+        max-width: 100%;
+        background-color: rgba(70, 70, 70, 0.014);
+    }
+    form .card-details .card-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .container form .card-details{
+        max-height: 300px;
+    }
+}
