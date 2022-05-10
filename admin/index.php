@@ -56,6 +56,7 @@
                             <th>Date of Start</th>
                             <th>Other Requirment</th>
                             <th>Status</th>
+                            <th>Action</th>
                         </tr>
                         </thead>
                         
@@ -82,6 +83,7 @@
                                  <td><?php echo $row['start_datee']; ?></td>
                                  <td><?php echo $row['other']; ?></td>
                                  <td>not get worker</td>
+                                  <td>Delete</td>  
                                 </tr>
                                 <?php
                             }
